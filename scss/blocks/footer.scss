@@ -1,0 +1,75 @@
+@import '../variables.scss';
+
+.f_container {
+    display: flex;
+    flex-wrap: wrap;
+    background: $PrimaryBlue100;
+    color: #fff;
+
+    &_title {
+        width: 50%;
+        font-size: 32px;
+        padding: 80px 0 50px 15%
+    }
+
+    &_form {
+        // padding: 85px 0 0 170px;
+        padding: 80px 100px 0 100px;
+    }
+
+    &_input {
+        display: block;
+        width: 400px;
+        height: 40px;
+        background: $PrimaryBlue100;
+        // border: none;
+        // border-radius: 20px;
+        margin-bottom: 20px;
+
+    }
+
+    &_button {
+        color: #000;
+        background: #fff;
+        padding: 12px;
+    }
+
+    &_text {
+        width: 50%;
+        padding-top: 20px;
+        padding-left: 15%;
+        padding-bottom: 40px;
+    }
+
+    &_number {
+        padding: 20px 100px 0 100px;
+        ;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    .f_container {
+
+        &_title {
+            width: 100%;
+            font-size: 20px;
+            padding: 70px 0 0 10%
+        }
+
+        &_form {
+            padding: 50px 0 0 10%;
+        }
+
+        &_input {
+            width: 330px;
+        }
+
+        &_text,&_number {
+            width: 100%;
+            padding-top: 20px;
+            padding-left: 10%;
+            padding-bottom: 40px;
+        }
+    }
+}

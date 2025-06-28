@@ -1,0 +1,53 @@
+   .map {
+       padding: 50px 0;
+       position: relative;
+
+       &_colonticul {
+           font-size: 18px;
+           line-height: 140%;
+           max-width: 170px;
+           color: $Grayscale50;
+           margin-bottom: 20px;
+           font-weight: 700;
+
+           &::after {
+               position: absolute;
+               content: '';
+               top: 60px;
+               left: 180px;
+               width: 400px;
+               height: 2px;
+               background: #000;
+           }
+       }
+
+       &_image {
+           width: 1440px;
+       }
+   }
+
+   
+@media screen and (max-width: 767px) {
+    .map {
+        padding-top: 40px;
+
+        &_colonticul {
+            font-size: 12px;
+            line-height: 140%;
+            max-width: 170px;
+            color: $Grayscale50;
+            margin-bottom: 20px;
+            font-weight: 700;
+
+            &::after {
+                position: absolute;
+                content: '';
+                top: 47px;
+                left: 110px;
+                width: 470px;
+                height: 2px;
+                background: #000;
+            }
+        }
+    }
+}

@@ -1,0 +1,96 @@
+@import '../variables.scss';
+
+.pdf {
+    padding: 100px 0;
+    position: relative;
+
+    &_colonticul {
+        font-size: 18px;
+        line-height: 140%;
+        max-width: 170px;
+        color: $Grayscale50;
+        margin-bottom: 20px;
+        font-weight: 700;
+
+        &::after {
+            position: absolute;
+            content: '';
+            top: 110px;
+            left: 110px;
+            width: 470px;
+            height: 2px;
+            background: #000;
+        }
+    }
+
+    &_title {
+        width: 670px;
+        font-size: 36px;
+        line-height: 140%;
+        color: $Grayscale50;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    ul {
+        padding-left: 40px;
+    }
+
+    li {
+        font-size: 18px;
+        color: $GrayscaleTop;
+    }
+
+    &_image {
+        margin: -140px 0 0 600px;
+    }
+
+    &_button {
+        display: block;
+        margin: 40px 0px -50px 0px;
+
+        text-align: center;
+        width: 200px;
+        height: 50px;
+        padding-top: 10px;
+        color: #fff;
+        background: $PrimaryBlue100;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .pdf {
+        padding-top: 40px;
+
+        &_colonticul {
+            font-size: 12px;
+            line-height: 140%;
+            max-width: 170px;
+            color: $Grayscale50;
+            margin-bottom: 20px;
+            font-weight: 700;
+
+            &::after {
+                position: absolute;
+                content: '';
+                top: 47px;
+                left: 75px;
+                width: 470px;
+                height: 2px;
+                background: #000;
+            }
+        }
+
+        &_title {
+            width: 100%;
+            font-size: 20px;
+        }
+
+        li {
+            font-size: 16px;
+        }
+        &_image {
+            margin: -25px 0 0 250px;
+        }
+    }
+}
